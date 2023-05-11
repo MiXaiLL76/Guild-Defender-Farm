@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+  <Name>Guild Defender Farm</Name>
+  <AutoStart>true</AutoStart>
+
+  <ScriptFileRefs>
+    <Item href="locales/locales.lua" />
+    <Item href="scripts/helpers.lua" />
+    <Item href="scripts/levenshtein.lua" />
+    <Item href="scripts/main_script.lua" />
+  </ScriptFileRefs>
+
+  <Form href="widgets/MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)" />
+
+  <addon_name>Guild Defender Farm</addon_name>
+  <!-- <addon_date>1683749867</addon_date> -->
+
+  <addon_link></addon_link>
+
+  <localizedNameFileRef href="name.txt" />
+  <localizedDescFileRef href="desc.txt" />
+</UIAddon>

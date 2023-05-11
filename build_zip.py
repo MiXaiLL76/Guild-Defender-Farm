@@ -1,10 +1,10 @@
-from zipfile import ZipFile
+import zipfile
 import glob
 import os
 import os.path as osp
 
 def main():
-    with ZipFile('GuildDefenderFarm.zip', 'w') as myzip:
+    with zipfile.ZipFile('GuildDefenderFarm.zip', 'w', compression=zipfile.ZIP_DEFLATED) as myzip:
         for file in glob.glob('./**', recursive=True):
             if '.zip' in file:
                 continue

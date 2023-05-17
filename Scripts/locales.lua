@@ -1,16 +1,20 @@
 local ToWString = userMods.ToWString
 local FromWString = userMods.FromWString
 -- interface module
-Global("locales", {})
+Global("locales", nil)
+Global("StateToColor", nil)
+Global("StateToText", nil)
 --------------------------------------------------------------------------------
 --------------------------------- Russian --------------------------------------
 --------------------------------------------------------------------------------
 
-locales["rus"] = {
+locales = {
     ["locName"] = "Колизей Хранителя",
     ["startMsg"] = "запущен.",
+
     ["impassable"] = "Не проходимый:",
     ["passable"] = "Проходимый:",
+    ["sopassable"] = "Трудный:",
 
     ["states"] = {
         ["ИзиХран проходится даже с тупящими рандомами"] = 0,
@@ -433,23 +437,18 @@ locales["rus"] = {
     }
 }
 
---------------------------------------------------------------------------------
+StateToColor = {
+    ["0"] = "Green",
+    ["1"] = "Green",
+    ["2"] = "Red",
+    ["3"] = "Orange",
+    ["4"] = "Orange",
+}
 
---------------------------------------------------------------------------------
---------------------------------- English --------------------------------------
---------------------------------------------------------------------------------
-
-locales["eng_eu"] = {}
-
---------------------------------------------------------------------------------
------
---------------------------------------------------------------------------------
-
--- put locales used by client
-locales = locales["rus"]
--- locales = locales[common.GetLocalization()] or locales["eng_eu"]
-
--- temporary to have en on ru
--- locales = locales["eng_eu"]
--- temporary to have ru on en
--- locales = locales["rus"]
+StateToText = {
+    ["0"] = locales["passable"],
+    ["1"] = locales["passable"],
+    ["2"] = locales["impassable"],
+    ["3"] = locales["sopassable"],
+    ["4"] = locales["sopassable"],
+}

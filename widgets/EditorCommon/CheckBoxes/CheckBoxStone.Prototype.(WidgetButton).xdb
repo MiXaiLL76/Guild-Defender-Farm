@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WidgetButton>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<Priority>13000</Priority>
+	<Placement>
+		<X>
+			<Size>26</Size>
+		</X>
+		<Y>
+			<Size>24</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<LayerHighlight href="CheckBoxStoneHighlight.(WidgetLayerSimpleTexture).xdb" />
+			<StateNormal>
+				<LayerMain href="CheckBoxStone.(WidgetLayerSimpleTexture).xdb" />
+			</StateNormal>
+			<StateDisabled>
+				<LayerMain href="CheckBoxStoneDisabled.(WidgetLayerSimpleTexture).xdb" />
+			</StateDisabled>
+			<ReactionOnUp>true</ReactionOnUp>
+			<Reaction>check_box_disable</Reaction>
+		</Item>
+		<Item>
+			<LayerHighlight href="CheckBoxStoneHighlight.(WidgetLayerSimpleTexture).xdb" />
+			<StateNormal>
+				<LayerMain href="CheckBoxStoneChecked.(WidgetLayerSimpleTexture).xdb" />
+			</StateNormal>
+			<StateDisabled>
+				<LayerMain href="CheckBoxStoneCheckedDisabled.(WidgetLayerSimpleTexture).xdb" />
+			</StateDisabled>
+			<ReactionOnUp>true</ReactionOnUp>
+			<Reaction>check_box_enable</Reaction>
+		</Item>
+	</Variants>
+</WidgetButton>

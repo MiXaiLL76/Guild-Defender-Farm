@@ -1,22 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <UIAddon>
-  <Name>Guild Defender Farm</Name>
-  <AutoStart>true</AutoStart>
+	<Name>Guild Defender Farm</Name>
+	<AutoStart>true</AutoStart>
+	<ScriptFileRefs>
+		<Item href="Scripts/Helpers/utf_to_ansi.lua" />
+		<Item href="Scripts/Helpers/helpers.lua" />
+		<Item href="Scripts/Helpers/LibDnD.lua" />
+		<Item href="Scripts/Helpers/levenshtein.lua" />
+		<Item href="Scripts/locales.lua" />
+		
+		<!-- defenders -->
+		<Item href="Scripts/Addons/defenders_info.lua" />
+		<!-- defenders -->
 
-  <ScriptFileRefs>
-    <Item href="locales/locales.lua" />
-    <Item href="scripts/helpers.lua" />
-    <Item href="scripts/levenshtein.lua" />
-    <Item href="scripts/main_script.lua" />
-  </ScriptFileRefs>
+		<!-- group_leaver -->
+		<Item href="Scripts/Addons/group_leaver.lua" />
+		<!-- group_leaver -->
 
-  <Form href="widgets/MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)" />
-
-  <addon_name>Guild Defender Farm</addon_name>
-  <!-- <addon_date>1683749867</addon_date> -->
-
-  <addon_link></addon_link>
-
-  <localizedNameFileRef href="name.txt" />
-  <localizedDescFileRef href="desc.txt" />
+		<Item href="Scripts/Options/items.lua" />
+		<Item href="Scripts/Options/main.lua" />
+		<Item href="Scripts/ScriptMain.lua" />
+	</ScriptFileRefs>
+	<Form href="Widgets/MainForm.(WidgetForm).xdb" />
 </UIAddon>

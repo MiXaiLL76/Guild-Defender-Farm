@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WidgetButton>
+	<Name>OptionButton</Name>
+	<Header>
+		<Prototype href="EditorCommon/OptionButton/ButtonRegular.Prototype.(WidgetButton).xdb" />
+	</Header>
+	<Priority>14500</Priority>
+	<Placement>
+		<X>
+			<Size>40</Size>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>50</Pos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>50</Pos>
+		</Y>
+	</Placement>
+</WidgetButton>

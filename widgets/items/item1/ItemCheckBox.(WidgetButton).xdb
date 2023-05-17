@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WidgetButton>
+	<Name>Item1CheckBox</Name>
+	<Header>
+		<Prototype href="../../EditorCommon/CheckBoxes/CheckBoxStone.Prototype.(WidgetButton).xdb" />
+	</Header>
+	<Placement>
+		<X>
+			<Pos>25</Pos>
+		</X>
+		<Y>
+			<Pos>55</Pos>
+		</Y>
+	</Placement>
+</WidgetButton>

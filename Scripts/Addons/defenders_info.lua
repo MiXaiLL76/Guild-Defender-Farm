@@ -82,6 +82,7 @@ function Defenders.FindNeededLocation(params)
             common.UnRegisterEventHandler(Defenders.LogUnits, "EVENT_UNITS_CHANGED")
         end
         Defenders.IsRegisteredLogUnits = false
+        showMsgAnnounce()
     end
 end
 

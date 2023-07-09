@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WidgetTextView>
-	<FormatFileRef href="Announce.txt" />
+	<FormatFileRef href="AnnounceChest.txt" />
 	<TextStyle>
 		<wrapText>false</wrapText>
 		<showClippedSymbol>true</showClippedSymbol>
@@ -8,7 +8,7 @@
 	</TextStyle>
 	<minWidth>100</minWidth>
 	<maxWidth>1200</maxWidth>
-	<Name>Announce</Name>
+	<Name>AnnounceChest</Name>
 	<Placement>
 		<QuantumScale>false</QuantumScale>
 		<X>

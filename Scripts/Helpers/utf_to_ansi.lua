@@ -163,9 +163,7 @@ local function Utf8ToAnsiUnSave(s)
         end
     end
 
-    if bad_char_count / s:len() > 0.2 then
-        return s
-    end
+    if bad_char_count / s:len() > 0.2 then return s end
 
     return r
 end

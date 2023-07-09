@@ -6,9 +6,11 @@
 	<Placement>
 		<X>
 			<Align>WIDGET_ALIGN_BOTH</Align>
+			<HighPos>0</HighPos>
 		</X>
 		<Y>
 			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
 			<Pos>14</Pos>
 			<HighPos>25</HighPos>
 		</Y>

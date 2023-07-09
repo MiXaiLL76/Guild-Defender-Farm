@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WidgetTextView>
-	<FormatFileRef href="ItemText.txt" />
-	<Name>Item3Text</Name>
+	<FormatFileRef href="normal.txt" />
+	<Name>normal</Name>
 	<Priority>500</Priority>
 	<Placement>
 		<X>
-			<Align>WIDGET_ALIGN_LOW</Align>
-			<Pos>60</Pos>
+			<Align>WIDGET_ALIGN_CENTER</Align>
 			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+			<Pos>0</Pos>
 		</X>
 		<Y>
-			<Align>WIDGET_ALIGN_LOW</Align>
-			<Pos>117</Pos>
+			<Align>WIDGET_ALIGN_HIGH</Align>
 			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+			<HighPos>45</HighPos>
 		</Y>
 	</Placement>
 	<TransparentInput>true</TransparentInput>

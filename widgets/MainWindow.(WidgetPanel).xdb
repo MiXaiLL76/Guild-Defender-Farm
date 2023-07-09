@@ -7,26 +7,24 @@
 	<Children>
 		<Item href="items/item1/ItemCheckBox.(WidgetButton).xdb" />
 		<Item href="items/item1/ItemText.(WidgetTextView).xdb" />
-		
-		<!-- <Item href="items/item2/ItemCheckBox.(WidgetButton).xdb" /> -->
-		<!-- <Item href="items/item2/ItemText.(WidgetTextView).xdb" /> -->
-		
-		<!-- <Item href="items/item3/ItemCheckBox.(WidgetButton).xdb" /> -->
-		<!-- <Item href="items/item3/ItemText.(WidgetTextView).xdb" /> -->
-		
+		<Item href="items/item2/ItemCheckBox.(WidgetButton).xdb" />
+		<Item href="items/item2/ItemText.(WidgetTextView).xdb" />
+		<Item href="labels/easy.(WidgetTextView).xdb" />
+		<Item href="labels/hard.(WidgetTextView).xdb" />
+		<Item href="labels/normal.(WidgetTextView).xdb" />
 	</Children>
 	<Placement>
 		<X>
-			<Size>250</Size>
 			<Align>WIDGET_ALIGN_HIGH</Align>
 			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Size>250</Size>
 		</X>
 		<Y>
-			<Size>300</Size>
 			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Size>195</Size>
 		</Y>
 	</Placement>
 	<Priority>14000</Priority>
 	<PickChildrenOnly>true</PickChildrenOnly>
-	<fade>0.9</fade>
+	<fade>0.95</fade>
 </WidgetPanel>

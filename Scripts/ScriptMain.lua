@@ -5,14 +5,12 @@ local use_cfg = true
 --------------------------------------------------------------------------------
 function Init()
     LogToChat('started.')
-    
+
     Main.Init(use_cfg)
     Items.Init(use_cfg)
 end
 --------------------------------------------------------------------------------
 common.RegisterEventHandler(Init, "EVENT_AVATAR_CREATED")
 --------------------------------------------------------------------------------
-if avatar.IsExist() then
-    Init()
-end
+if avatar.IsExist() then Init() end
 --------------------------------------------------------------------------------

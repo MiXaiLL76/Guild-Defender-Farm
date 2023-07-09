@@ -50,4 +50,5 @@ function Main.Init(use_cfg)
     if Main.Cfg["wtMainWindowShowed"] ~= nil then
         wtMainWindow:Show(Main.Cfg.wtMainWindowShowed)
     end
+
 end

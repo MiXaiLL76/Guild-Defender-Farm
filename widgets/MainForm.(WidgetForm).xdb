@@ -6,7 +6,7 @@
 		<Item href="MainWindow.(WidgetPanel).xdb" />
 		<Item href="OptionButton.(WidgetButton).xdb" />
 		<Item href="Announce.(WidgetTextView).xdb" />
-		
+		<Item href="AnnounceChest.(WidgetTextView).xdb" />
 	</Children>
 	<Placement>
 		<X>

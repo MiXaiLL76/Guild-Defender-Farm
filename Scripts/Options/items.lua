@@ -15,10 +15,10 @@ function Items.OnCheckbox(options)
         end
 
         if options['sender'] == 'Item2CheckBox' then
-            Leaver.Register()
             Items.Cfg.Item2CheckBox = 1
+            Chest.Activate()
         end
-        
+
     elseif options['name'] == 'check_box_enable' then
         item:SetVariant(0)
 
@@ -28,19 +28,17 @@ function Items.OnCheckbox(options)
         end
 
         if options['sender'] == 'Item2CheckBox' then
-            Leaver.UnRegister()
             Items.Cfg.Item2CheckBox = 0
+            Chest.Deactivate()
         end
     end
     if Items.Cfg.use_cfg then SetConfig(Items.CfgName, Items.Cfg) end
 end
 
 function Items.Init(use_cfg)
-    if use_cfg then 
-        local Cfg = GetConfig(Items.CfgName) 
-        if Cfg ~= nil then
-            Items.Cfg = Cfg
-        end
+    if use_cfg then
+        local Cfg = GetConfig(Items.CfgName)
+        if Cfg ~= nil then Items.Cfg = Cfg end
     end
 
     Items.Cfg.use_cfg = use_cfg

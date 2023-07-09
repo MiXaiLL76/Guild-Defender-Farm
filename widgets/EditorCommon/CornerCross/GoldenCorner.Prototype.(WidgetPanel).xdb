@@ -9,14 +9,14 @@
 	<BackLayer href="GoldenCorner.(WidgetLayerSimpleTexture).xdb" />
 	<Placement>
 		<X>
-			<Size>52</Size>
 			<Align>WIDGET_ALIGN_HIGH</Align>
 			<Pos>0</Pos>
 			<HighPos>1</HighPos>
+			<Size>52</Size>
 		</X>
 		<Y>
-			<Size>52</Size>
 			<Pos>14</Pos>
+			<Size>52</Size>
 		</Y>
 	</Placement>
 	<Priority>13000</Priority>

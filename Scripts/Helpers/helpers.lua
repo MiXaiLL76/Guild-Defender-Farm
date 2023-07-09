@@ -5,17 +5,13 @@ local AddonName = tostring(common.GetAddonName())
 
 function getNormalString(input_string)
     if not input_string then return nil end
-    if (IsWs(input_string)) then
-        input_string = FromWs(input_string);
-    end
+    if (IsWs(input_string)) then input_string = FromWs(input_string); end
     return tostring(input_string);
 end
 
 function getZoneName()
     local zoneInfo = cartographer.GetCurrentZoneInfo();
-    if zoneInfo ~= nil then
-        return getNormalString(zoneInfo.zoneName);
-    end
+    if zoneInfo ~= nil then return getNormalString(zoneInfo.zoneName); end
     return ''
 end
 
@@ -26,13 +22,13 @@ end
 
 function LogToChat(text, chatColor, addonName)
     text = Utf8ToAnsi(text)
-    
+
     local wtChat = nil
     local valuedText = common.CreateValuedText()
 
     if not wtChat then
         wtChat = stateMainForm:GetChildUnchecked("ChatLog", false)
-        
+
         wtChat = wtChat:GetChildUnchecked("Container", true)
 
         local formatVT =
@@ -56,7 +52,6 @@ function showMsgAnnounce(value, color)
     if (color == nil) then color = "LogColorRed" end
 
     local wtMessage = mainForm:GetChildChecked("Announce", true)
-
     if (value) then
         local tstText = common.CreateValuedText()
         tstText:ClearValues()
@@ -81,6 +76,8 @@ function dump(o)
         end
         return s .. '} '
     else
+        if type(o) == 'userdata' then return getNormalString(o) end
+
         return tostring(o)
     end
 end

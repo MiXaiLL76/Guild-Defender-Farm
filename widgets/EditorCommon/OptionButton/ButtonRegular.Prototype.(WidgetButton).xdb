@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WidgetButton>
-	<Header>
-		<isPrototype>true</isPrototype>
-	</Header>
-	<Priority>13000</Priority>
-	<Placement>
-		<X>
-			<Size>105</Size>
-		</X>
-		<Y>
-			<Size>30</Size>
-		</Y>
-	</Placement>
-	<IgnoreDblClick>true</IgnoreDblClick>
 	<TextTag>button_label</TextTag>
 	<Variants>
 		<Item>
-			<Reaction>button_pressed</Reaction>
 			<TextFileRef href="ButtonText.txt" />
 			<LayerHighlight href="ButtonRegularHighlighted.(WidgetLayerTiledTexture).xdb" />
 			<PushedOffset x="-2" y="2" />
@@ -27,10 +13,24 @@
 			<StatePushed>
 				<LayerMain href="ButtonRegularPressed.(WidgetLayerTiledTexture).xdb" />
 			</StatePushed>
+			<Reaction>button_pressed</Reaction>
 			<ReactionOnUp>true</ReactionOnUp>
 		</Item>
 	</Variants>
 	<TextStyle>
 		<Align>ALIGNY_MIDDLE</Align>
 	</TextStyle>
+	<Priority>13000</Priority>
+	<Placement>
+		<X>
+			<Size>105</Size>
+		</X>
+		<Y>
+			<Size>30</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
 </WidgetButton>

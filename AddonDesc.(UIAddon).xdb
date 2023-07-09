@@ -8,15 +8,8 @@
 		<Item href="Scripts/Helpers/LibDnD.lua" />
 		<Item href="Scripts/Helpers/levenshtein.lua" />
 		<Item href="Scripts/locales.lua" />
-		
-		<!-- defenders -->
 		<Item href="Scripts/Addons/defenders_info.lua" />
-		<!-- defenders -->
-
-		<!-- group_leaver -->
-		<Item href="Scripts/Addons/group_leaver.lua" />
-		<!-- group_leaver -->
-
+		<Item href="Scripts/Addons/chest_finder.lua" />
 		<Item href="Scripts/Options/items.lua" />
 		<Item href="Scripts/Options/main.lua" />
 		<Item href="Scripts/ScriptMain.lua" />

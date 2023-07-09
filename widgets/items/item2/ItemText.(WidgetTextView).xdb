@@ -6,13 +6,13 @@
 	<Placement>
 		<X>
 			<Align>WIDGET_ALIGN_LOW</Align>
-			<Pos>60</Pos>
 			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+			<Pos>60</Pos>
 		</X>
 		<Y>
 			<Align>WIDGET_ALIGN_LOW</Align>
-			<Pos>87</Pos>
 			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+			<Pos>87</Pos>
 		</Y>
 	</Placement>
 	<TransparentInput>true</TransparentInput>

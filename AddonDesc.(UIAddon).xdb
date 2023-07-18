@@ -15,4 +15,6 @@
 		<Item href="Scripts/ScriptMain.lua" />
 	</ScriptFileRefs>
 	<Form href="Widgets/MainForm.(WidgetForm).xdb" />
+	<localizedNameFileRef href="name.txt"/>
+	<localizedDescFileRef href="desc.txt"/>
 </UIAddon>

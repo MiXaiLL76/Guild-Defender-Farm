@@ -78,5 +78,7 @@ end
 
 function Chest.Activate()
     Chest.activated = true
-    Chest.Register()
+    if (getZoneName() == tostring(locales['locName'])) then
+        Chest.Register()
+    end
 end

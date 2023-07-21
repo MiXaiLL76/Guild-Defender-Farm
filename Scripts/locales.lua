@@ -37,6 +37,13 @@ locales = {
             ["state_title"] = Utf8ToAnsi(
                 "Сложный и лучше пропустить.")
         },
+        [Utf8ToAnsi("Харон")] = {
+            ["state"] = "2",
+            ["guild"] = "",
+            ["info"] = "",
+            ["state_title"] = Utf8ToAnsi(
+                "Сложный и лучше пропустить.")
+        },
         [Utf8ToAnsi("Ангелочек")] = {
             ["state"] = "2",
             ["guild"] = Utf8ToAnsi("Лига"),

@@ -4,7 +4,7 @@ import os
 import os.path as osp
 
 def main():
-    with zipfile.ZipFile('GuildDefenderFarm.zip', 'w', compression=zipfile.ZIP_DEFLATED) as myzip:
+    with zipfile.ZipFile('GuildDefenderFarm.zip', 'w', allowZip64=True, compression=zipfile.ZIP_DEFLATED, compresslevel=9) as myzip:
         for file in glob.glob('./**', recursive=True):
             if '.zip' in file:
                 continue

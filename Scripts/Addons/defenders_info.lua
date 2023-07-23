@@ -22,6 +22,9 @@ function Defenders.UpdateCurrencies()
         local info = currencyId:GetInfo()
 
         local cur_name = getNormalString(info.name)
+        if cur_name == nil then
+            cur_name = tostring('empty name')
+        end
 
         local is_find = not (nil == cur_name:find(Utf8ToAnsi(
                                                       'Приглашение в Колизей Хранителя')))

@@ -48,29 +48,35 @@ function Defenders.UpdateCurrencies()
     -- LogToChat(dump(avatar.GetCurrencyValue(Defenders.easy)))
     -- LogToChat(dump(avatar.GetCurrencyValue(Defenders.normal)))
     -- LogToChat(dump(avatar.GetCurrencyValue(Defenders.hard)))
+    if Defenders.easy then
+        local easy_info = avatar.GetCurrencyValue(Defenders.easy)
+        if easy_info  then
+            local wt_easy = mainForm:GetChildChecked("easy", true)
+            wt_easy:ClearValues()
+            wt_easy:SetVal("value",
+                        Utf8ToAnsi(getNormalString(easy_info.value) .. " из " ..
+                                        getNormalString(easy_info.maxValue)))
+        end
 
-    local easy_info = avatar.GetCurrencyValue(Defenders.easy)
-    local wt_easy = mainForm:GetChildChecked("easy", true)
-    wt_easy:ClearValues()
-    wt_easy:SetVal("value",
-                   Utf8ToAnsi(getNormalString(easy_info.value) .. " из " ..
-                                  getNormalString(easy_info.maxValue)))
+        local normal_info = avatar.GetCurrencyValue(Defenders.normal)
+        if normal_info:
+            local wt_normal = mainForm:GetChildChecked("normal", true)
+            wt_normal:ClearValues()
+            wt_normal:SetVal("value",
+                            Utf8ToAnsi(
+                                getNormalString(normal_info.value) .. " из " ..
+                                    getNormalString(normal_info.maxValue)))
+        end
 
-    local normal_info = avatar.GetCurrencyValue(Defenders.normal)
-    local wt_normal = mainForm:GetChildChecked("normal", true)
-    wt_normal:ClearValues()
-    wt_normal:SetVal("value",
-                     Utf8ToAnsi(
-                         getNormalString(normal_info.value) .. " из " ..
-                             getNormalString(normal_info.maxValue)))
-
-    local hard_info = avatar.GetCurrencyValue(Defenders.hard)
-    local wt_hard = mainForm:GetChildChecked("hard", true)
-    wt_hard:ClearValues()
-    wt_hard:SetVal("value",
-                   Utf8ToAnsi(getNormalString(hard_info.value) .. " из " ..
-                                  getNormalString(hard_info.maxValue)))
-
+        local hard_info = avatar.GetCurrencyValue(Defenders.hard)
+        if hard_info then
+            local wt_hard = mainForm:GetChildChecked("hard", true)
+            wt_hard:ClearValues()
+            wt_hard:SetVal("value",
+                        Utf8ToAnsi(getNormalString(hard_info.value) .. " из " ..
+                                        getNormalString(hard_info.maxValue)))
+        end
+    end
 end
 
 function Defenders.FindDefenderByName(unit_name)

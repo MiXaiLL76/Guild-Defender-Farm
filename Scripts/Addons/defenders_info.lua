@@ -18,13 +18,13 @@ end
 
 function Defenders.UpdateCurrencies()
     local Currencies = avatar.GetCurrencies()
-    for _, currencyId in ipairs(Currencies) do
+
+    for _, currencyId in pairs(Currencies) do
         local info = currencyId:GetInfo()
 
         local cur_name = getNormalString(info.name)
-        if cur_name == nil then
-            cur_name = tostring('empty name')
-        end
+
+        if cur_name == nil then cur_name = tostring('empty name') end
 
         local is_find = not (nil == cur_name:find(Utf8ToAnsi(
                                                       'Приглашение в Колизей Хранителя')))
@@ -50,22 +50,23 @@ function Defenders.UpdateCurrencies()
     -- LogToChat(dump(avatar.GetCurrencyValue(Defenders.hard)))
     if Defenders.easy then
         local easy_info = avatar.GetCurrencyValue(Defenders.easy)
-        if easy_info  then
+        if easy_info then
             local wt_easy = mainForm:GetChildChecked("easy", true)
             wt_easy:ClearValues()
             wt_easy:SetVal("value",
-                        Utf8ToAnsi(getNormalString(easy_info.value) .. " из " ..
-                                        getNormalString(easy_info.maxValue)))
+                           Utf8ToAnsi(
+                               getNormalString(easy_info.value) .. " из " ..
+                                   getNormalString(easy_info.maxValue)))
         end
 
         local normal_info = avatar.GetCurrencyValue(Defenders.normal)
-        if normal_info:
+        if normal_info then
             local wt_normal = mainForm:GetChildChecked("normal", true)
             wt_normal:ClearValues()
             wt_normal:SetVal("value",
-                            Utf8ToAnsi(
-                                getNormalString(normal_info.value) .. " из " ..
-                                    getNormalString(normal_info.maxValue)))
+                             Utf8ToAnsi(
+                                 getNormalString(normal_info.value) .. " из " ..
+                                     getNormalString(normal_info.maxValue)))
         end
 
         local hard_info = avatar.GetCurrencyValue(Defenders.hard)
@@ -73,8 +74,9 @@ function Defenders.UpdateCurrencies()
             local wt_hard = mainForm:GetChildChecked("hard", true)
             wt_hard:ClearValues()
             wt_hard:SetVal("value",
-                        Utf8ToAnsi(getNormalString(hard_info.value) .. " из " ..
-                                        getNormalString(hard_info.maxValue)))
+                           Utf8ToAnsi(
+                               getNormalString(hard_info.value) .. " из " ..
+                                   getNormalString(hard_info.maxValue)))
         end
     end
 end
